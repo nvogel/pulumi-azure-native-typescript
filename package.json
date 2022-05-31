@@ -1,0 +1,31 @@
+{
+    "name": "${PROJECT}",
+    "private": true,
+    "scripts": {
+        "build": "rm -rf ./bin && tsc",
+        "format": "prettier --write .",
+        "format-check": "prettier --check .",
+        "dep-check": "depcheck --ignores='@types/node'",
+        "lint": "eslint . --ext .ts",
+        "audit-check": "npm audit --registry=https://registry.npmjs.org --audit-level=high",
+        "postinstall": "npx enforce-node-version"
+    },
+    "devDependencies": {
+        "@types/node": "^16.4.10",
+        "@typescript-eslint/eslint-plugin": "^4.28.5",
+        "@typescript-eslint/parser": "^4.28.5",
+        "depcheck": "^1.4.2",
+        "enforce-node-version": "^0.1.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.2",
+        "prettier": "^2.3.2"
+    },
+    "dependencies": {
+        "@pulumi/azure-native": "^1.19.0",
+        "@pulumi/pulumi": "^3.9.1"
+    },
+    "engines": {
+        "node": ">=12.10"
+    }
+}

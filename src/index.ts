@@ -1,0 +1,1 @@
+export { projectName, resourceGroup, env, tags } from './common'
