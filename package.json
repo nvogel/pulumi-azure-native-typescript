@@ -11,12 +11,12 @@
         "postinstall": "npx enforce-node-version"
     },
     "devDependencies": {
-        "@types/node": "^16.4.10",
-        "@typescript-eslint/eslint-plugin": "^4.28.5",
-        "@typescript-eslint/parser": "^4.28.5",
+        "@types/node": "^18.7.0",
+        "@typescript-eslint/eslint-plugin": "^5.37.0",
+        "@typescript-eslint/parser": "^5.37.0",
         "depcheck": "^1.4.2",
         "enforce-node-version": "^0.1.0",
-        "eslint": "^7.32.0",
+        "eslint": "^8.23.1",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.25.2",
         "prettier": "^2.3.2"
